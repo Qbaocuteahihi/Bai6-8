@@ -1,0 +1,8 @@
+<div id="container">
+  @if (authService.currentUser) {
+    <img [src]="authService.currentUser.photoURL" />
+  }
+
+  <button [routerLink]="['/home']">Trang Chủ</button>
+  <button [routerLink]="['/products']">Sản Phẩm</button>
+</div>

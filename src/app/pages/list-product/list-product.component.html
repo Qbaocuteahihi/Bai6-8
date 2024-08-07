@@ -1,0 +1,8 @@
+<h1>Trang Sản Phẩm</h1>
+@for (product of this.storeService.products; track $index) {
+  <app-product-card
+    [routerLink]="['/product', product.id]"
+    [product]="product"
+  ></app-product-card>
+  <!-- detail-product.component.html -->
+}

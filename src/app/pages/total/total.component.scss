@@ -1,0 +1,84 @@
+///* Container for each product item */
+//.cart-container {
+//  display: flex;
+//  align-items: center;
+//  padding: 16px;
+//  border: 1px solid #ddd;
+//  border-radius: 8px;
+//  margin-bottom: 16px;
+//  background-color: #f9f9f9;
+//  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//
+//  /* Information about the product */
+//  .product-info {
+//    display: flex;
+//    flex: 1;
+//    align-items: center;
+//
+//    .product-image {
+//      width: 80px;
+//      height: 80px;
+//      object-fit: cover;
+//      border-radius: 8px;
+//      margin-right: 16px;
+//    }
+//
+//    .product-details {
+//      display: flex;
+//      flex-direction: column;
+//
+//      .product-name {
+//        font-size: 18px;
+//        font-weight: bold;
+//        color: #333;
+//        margin: 0;
+//      }
+//
+//      .product-description {
+//        font-size: 14px;
+//        color: #666;
+//        margin: 4px 0;
+//      }
+//
+//      .product-quantity,
+//      .product-price {
+//        font-size: 16px;
+//        color: #333;
+//        margin: 4px 0;
+//      }
+//    }
+//  }
+//
+//  /* Remove button */
+//  .remove-button {
+//    background-color: #e74c3c; // Red color for the remove button
+//    color: #fff;
+//    border: none;
+//    padding: 8px 16px;
+//    border-radius: 4px;
+//    cursor: pointer;
+//    font-size: 14px;
+//    transition: background-color 0.3s;
+//    margin-left: 16px;
+//
+//    &:hover {
+//      background-color: #c0392b; // Darker red for hover effect
+//    }
+//  }
+//}
+//
+///* Total price container */
+//.total-container {
+//  display: flex;
+//  justify-content: flex-end;
+//  padding: 16px;
+//  border-top: 1px solid #ddd;
+//  background-color: #fff;
+//  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+//
+//  .cost {
+//    font-size: 18px;
+//    font-weight: bold;
+//    color: #333;
+//  }
+//}

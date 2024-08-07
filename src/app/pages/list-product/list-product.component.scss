@@ -1,0 +1,70 @@
+/* Container for product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between product cards */
+  justify-content: center; /* Center products horizontally */
+  padding: 16px;
+}
+
+/* Style for each product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px; /* Adjust width as needed */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflow for rounded corners */
+  text-align: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+/* Image styling */
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Content inside the card */
+.product-card .content {
+  padding: 16px;
+}
+
+.product-card .content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.product-card .content p {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.product-card .content .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+}
+
+/* Hover effect */
+.product-card:hover {
+  transform: scale(1.03); /* Slightly enlarge card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
