@@ -4,7 +4,7 @@
   <p class="product-description">{{ product.description }}</p>
   <p class="product-quantity">Số lượng: {{ product.inStock }}</p>
   <p class="product-price">Giá: {{ product.price }}đ</p>
-  <button (click)="authService.removeFromCart(product.id)">Xóa</button>
+  <button (click)="authService.removeFromCart()">Xóa</button>
 </div>
 <div class="total-container">
   <p class="cost">Tổng tiền: {{ authService.getTotalPrice() }}đ</p>

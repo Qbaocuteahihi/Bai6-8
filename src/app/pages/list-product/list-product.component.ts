@@ -19,11 +19,11 @@ export class ListProductComponent {
     private router: Router,
   ) {}
 
-  trackByProductId(index: number, product: any): number {
-    return product.id;
-  }
+  addToCart(product: ProductModel) {
+    // Lưu trữ sản phẩm vào giỏ hàng
+    this.storeService.addToCart(product);
 
-  addToCart() {
+    // Điều hướng đến trang tính tiền
     this.router.navigate(['/total']);
   }
 }
