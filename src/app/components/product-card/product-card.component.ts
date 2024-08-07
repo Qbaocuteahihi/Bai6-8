@@ -1,25 +1,17 @@
 import { Component, Input } from '@angular/core';
-import { ProductModel } from '../../models/product.model';
+import { Product } from '../../models/product.model';
 import { StoreService } from '../../services/store.service';
-import { Router } from '@angular/router';
+import { TotalCostComponent } from '../total/total.component';
 
 @Component({
   selector: 'app-product-card',
   standalone: true,
-  imports: [],
-  templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.scss'],
+  imports: [TotalCostComponent],
+  templateUrl: 'product-card.component.html',
+  styleUrl: 'product-card.component.scss',
 })
 export class ProductCardComponent {
-  @Input() product!: ProductModel;
+  @Input() product!: Product;
 
-  constructor(
-    private router: Router,
-    private storeService: StoreService,
-  ) {}
-
-  addToCart(product: ProductModel) {
-    this.storeService.addToCart(product);
-    this.router.navigate(['/total']);
-  }
+  constructor(public storeService: StoreService) {}
 }

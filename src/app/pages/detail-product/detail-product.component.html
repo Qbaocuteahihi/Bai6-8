@@ -3,5 +3,14 @@
   @if (detailProduct) {
     <h2>{{ detailProduct?.name }}</h2>
     <p>{{ detailProduct?.price }}</p>
+    <app-total-cost></app-total-cost>-->
+    <button (click)="storeService.addToCart(detailProduct)">
+      Thêm vào giỏ hàng
+    </button>
   }
 </div>
+<!--      <h2>Giá:{{ detailProduct?.price }}VND</h2>-->
+<!--      <app-total-cost></app-total-cost>-->
+<!--      <button (click)="storeService.addToCart(detailProduct)">-->
+<!--        Thêm vào giỏ hàng-->
+<!--      </button>-->

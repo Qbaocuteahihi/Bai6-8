@@ -1,8 +1,22 @@
-<div id="container">
-  @if (authService.currentUser) {
-    <img [src]="authService.currentUser.photoURL" />
-  }
-
-  <button [routerLink]="['/home']">Trang Chủ</button>
-  <button [routerLink]="['/products']">Sản Phẩm</button>
+<div id="contener">
+  <div id="button-navbar-left">
+    <button [routerLink]="['/home']">Trang chủ</button>
+    <button [routerLink]="['/cart']">Giỏ hàng</button>
+    <input type="text" placeholder="Tìm kiếm sản phẩm...." />
+    <button>Tìm kiếm</button>
+  </div>
+  <p></p>
+  <P></P>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <div id="button-navbar-right">
+    <div id="avt">
+      @if (authService.currentUser) {}
+    </div>
+    <img [src]="authService.currentUser.photoURL" alt="" />
+    <button (click)="authService.login()">Đăng nhập với Google</button>
+    <button (click)="authService.logout()">Đăng xuất</button>
+  </div>
 </div>
